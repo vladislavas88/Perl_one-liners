@@ -41,3 +41,25 @@ perl -lanE 'say lc("$_")'
 perl -lanE '$_=~ s/^\s+//; if ($_=~ m/^[A-Za-z0-9]/) { chomp($_); say $_}'
 
 #============================================================================================================================================
+
+# $ perl -E 'for($i=1; $i<10; $i++) { say "host0$i\\.domain\\.com"; }' > host_domain_com.txt
+
+perl -E 'for($i=1; $i<10; $i++) { say "host0$i\\.domain\\.com"; }'
+
+# $ perl -E 'for($i=10; $i<118; $i++) { say "host$i\\.domain\\.com"; }' >> host_domain_com.txt
+
+perl -E 'for($i=10; $i<118; $i++) { say "host$i\\.domain\\.com"; }'
+
+# $ perl -E 'for($i=1; $i<10; $i++) { say "\(\^\|\\.\)" . "host0$i\\.domain\\.com"; }' >> host_domain_com.txt
+
+perl -E 'for($i=1; $i<10; $i++) { say "\(\^\|\\.\)" . "host0$i\\.domain\\.com"; }'
+
+# $ perl -E 'for($i=10; $i<118; $i++) { say "\(\^\|\\.\)" . "host$i\\.domain\\.com"; }' >> host_domain_com.txt
+
+perl -E 'for($i=10; $i<118; $i++) { say "\(\^\|\\.\)" . "host$i\\.domain\\.com"; }'
+
+#============================================================================================================================================
+
+
+
+
