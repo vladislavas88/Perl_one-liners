@@ -6,7 +6,7 @@ perl -nE "s/\./\\\./g; print;"
 perl -nE "s/https\:\/\/www\\\./(\^\|\\.\)/g; print;"
 perl -nE "s/https\:\/\//\(\^\|\\.\)/g; print;"
 perl -nE "s/http\:\/\/www\\./\(\^\|\\.\)/g; print;"
-perl -nE "s/http\:\/\//\(\^\|\\.\)/g; print;"
+perl -nE "s/http\:\/\//\(\^\|\\.\)/g; print;" 
 perl -nE "s/\/.*//g; print;"
 perl -nE "s/^\s*$//g; print;"
 
